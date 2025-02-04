@@ -1,8 +1,3 @@
-Here’s an updated `README.md` file for your project, reflecting the changes we’ve made (including the switch to CKEditor 5 and Redis caching). You can customize it further as needed.
-
----
-
-```markdown
 # BharatFD Internship Test Project
 
 This project is a backend implementation for managing FAQs with multilingual support, built using Django and Django REST Framework. It includes features like:
