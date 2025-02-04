@@ -197,5 +197,7 @@ python manage.py test
 
 This project is licensed under the MIT License.
 
+---
+
 ## Contact
 For any questions or issues, please contact [Harish Yadav](https://www.linkedin.com/in/v-harish-yadav-b2bb52241).
