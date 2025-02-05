@@ -1,4 +1,3 @@
-```markdown
 # BharatFD Internship Test - Backend Solution
 
 This repository contains the backend solution for the BharatFD internship test. It includes a Django-based REST API for managing FAQs with multilingual support, WYSIWYG editor integration, and Redis caching.
@@ -6,6 +5,7 @@ This repository contains the backend solution for the BharatFD internship test. 
 ---
 
 ## **Features**
+
 - **FAQ Management**: Create, read, update, and delete FAQs.
 - **Multilingual Support**: FAQs can be translated into multiple languages (e.g., Hindi, Bengali).
 - **WYSIWYG Editor**: Rich text formatting for FAQ answers using `django-ckeditor`.
@@ -17,18 +17,22 @@ This repository contains the backend solution for the BharatFD internship test. 
 ## **Installation**
 
 ### **Prerequisites**
+
 - Python 3.8+
 - Redis (for caching)
 - Docker (optional, for deployment)
 
 ### **Steps**
+
 1. Clone the repository:
+
    ```bash
-   git clone https://github.com/<your-username>/bharatfd_internship.git
-   cd bharatfd_internship
+   git clone https://github.com/<your_username>/BharatFDv2.git
+   cd BharatFDv2
    ```
 
 2. Create a virtual environment and install dependencies:
+
    ```bash
    python -m venv venv
    source venv/bin/activate  # On Windows: venv\Scripts\activate
@@ -36,15 +40,18 @@ This repository contains the backend solution for the BharatFD internship test. 
    ```
 
 3. Run migrations:
+
    ```bash
    python manage.py migrate
    ```
 
 4. Start the Redis server:
+
    - On macOS/Linux: `redis-server`
    - On Windows: Start the Redis server using the Redis installer.
 
 5. Run the Django development server:
+
    ```bash
    python manage.py runserver
    ```
@@ -54,22 +61,27 @@ This repository contains the backend solution for the BharatFD internship test. 
 ## **API Usage**
 
 ### **Endpoints**
+
 - **Fetch FAQs in English (Default)**:
-  ```bash
+
+  ```http
   GET /api/faqs/
   ```
 
 - **Fetch FAQs in Hindi**:
-  ```bash
+
+  ```http
   GET /api/faqs/?lang=hi
   ```
 
 - **Fetch FAQs in Bengali**:
-  ```bash
+
+  ```http
   GET /api/faqs/?lang=bn
   ```
 
 ### **Example**
+
 ```bash
 curl http://localhost:8000/api/faqs/?lang=hi
 ```
@@ -79,6 +91,7 @@ curl http://localhost:8000/api/faqs/?lang=hi
 ## **Testing**
 
 Run the test suite using:
+
 ```bash
 python manage.py test
 ```
@@ -88,7 +101,9 @@ python manage.py test
 ## **Deployment**
 
 ### **Using Docker**
+
 1. Build and run the Docker containers:
+
    ```bash
    docker-compose up --build
    ```
@@ -98,6 +113,7 @@ python manage.py test
 ---
 
 ## **Technologies Used**
+
 - **Backend**: Django, Django REST Framework
 - **Database**: SQLite (default), Redis (caching)
 - **WYSIWYG Editor**: django-ckeditor
@@ -107,6 +123,7 @@ python manage.py test
 ---
 
 ## **Code Structure**
+
 ```
 bharatfd_internship/
 ├── faqs/
@@ -131,6 +148,7 @@ bharatfd_internship/
 ---
 
 ## **Contributing**
+
 1. Fork the repository.
 2. Create a new branch: `git checkout -b feature/your-feature-name`.
 3. Commit your changes: `git commit -m "Add your feature"`.
@@ -140,18 +158,22 @@ bharatfd_internship/
 ---
 
 ## **License**
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+This project is licensed under the MIT License.&#x20;
 
 ---
 
 ## **Contact**
-For questions or feedback, please open an issue in the repository or contact me on LinkedIn:  
-[Harish Yadav](https://www.linkedin.com/in/v-harish-yadav-b2bb52241)
+
+For questions or feedback, please open an issue in the repository or contact me on LinkedIn:\
+[Harish Yadav](https://www.linkedin.com/in/harish-yadav-b2bb52241)
 
 ---
 
 ## **Acknowledgments**
+
 - [Django](https://www.djangoproject.com/) for the web framework.
 - [Django REST Framework](https://www.django-rest-framework.org/) for building the API.
 - [Redis](https://redis.io/) for caching.
 - [django-ckeditor](https://github.com/django-ckeditor/django-ckeditor) for rich text editing.
+
